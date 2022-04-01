@@ -1,0 +1,27 @@
+@model List<LaptopPicture>
+
+
+<div class="catagary_section_2">
+   <div class="container-fluid">
+      <div class="row">
+         @{
+            foreach (var item in Model)
+            {
+               <div class="col-md-4">
+                  <div class="box_man">
+                     <h3 class="mobile_text">@item.Laptop.Brand</h3>
+                     <div class="comp_img "><img class="img_comp" src="@Url.Content(item.LaptopPicPath)"></div>
+                     <div class="cart_main  d-flex flex-column">
+
+                        <h4 class="samsung_text">@item.Laptop.Brand</h4>
+                        <h6 class="rate_text"><a href="#">@(item.Laptop.Price-100)</a></h6>
+                        <h6 class="rate_text_1">@item.Laptop.Price</h6>
+                        <button type="submit" class="btn btn-success">Add to cart</button>
+                     </div>
+                  </div>
+               </div>
+            }
+         }
+      </div>
+   </div>
+</div>

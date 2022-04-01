@@ -17,18 +17,27 @@ namespace CoreUI.Repositories.CartRepository.Concrete
                 return context.Carts
                             .Include(i => i.CartItems)
                             .ThenInclude(i => i.ProductNavigation)
-                            .ThenInclude(i=>i.LaptopPictures)
+                            .ThenInclude(i => i.LaptopPictures)
                             .FirstOrDefault(i => i.UserId == userId);
             }
         }
-           public override void Update(Cart entity)
+        public override void Update(Cart entity)
         {
             using (var context = new CoreDbContext())
             {
-               context.Carts.Update(entity);
-               context.SaveChanges();
+                context.Carts.Update(entity);
+                context.SaveChanges();
             }
-        } 
-       
+        }
+
+        public void DeleteFromCart(int cartId, int productId)
+        {
+            using (var context = new CoreDbContext())
+            {
+                var cmd = @"delete from CartItem where CartId=@p0 and ProductId=@p1";
+                context.Database.ExecuteSqlRaw(cmd, cartId, productId);
+            }
+        }
+
     }
 }

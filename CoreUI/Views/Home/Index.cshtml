@@ -1,226 +1,244 @@
 ﻿@model List<LaptopPicture>
 @{
-    ViewData["Title"] = "Home Page";
-    Layout="_Layout";
-   
+   ViewData["Title"] = "Home Page";
+   Layout = "_Layout";
+
 }
-     
-      <!-- banner section start -->
-      <div class="banner_section layout_padding">
-         <div id="my_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container">
-                     <div class="row ">
-                        <div class="col-md-4">
-                           <div class="image_1"><img src="~/Pictures/navSetup1.jpeg" style="width:100%"></div>
-                        </div>
-                        <div class="col-md-4">
-                           <h1 class="banner_taital">Big Sale Offer</h1>
-                           <div class="buynow_bt active"><a href="#">Buy Now</a></div>
-                           <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <div class="row ">
-                        <div class="col-md-4">
-                           <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
-                        </div>
-                        <div class="col-md-4">
-                           <h1 class="banner_taital">Big Sale Offer</h1>
-                           <div class="buynow_bt active"><a href="#">Buy Now</a></div>
-                           <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-md-4">
-                           <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
-                        </div>
-                        <div class="col-md-4">
-                           <h1 class="banner_taital">Big Sale Offer</h1>
-                           <div class="buynow_bt active"><a href="#">Buy Now</a></div>
-                           <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-              <i class="fa fa-angle-left"></i>
-            </a>
-            <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-              <i class="fa fa-angle-right"></i>
-            </a>
-         </div>
-      </div>
-      <!-- banner section end -->
-      <!-- catagary section start -->
-      <div class="catagary_section layout_padding">
-         <div class="container">
-            <div class="catagary_main">
-               <div class="catagary_left">
-                  <h2 class="categary_text">Categary</h2>
-               </div>
-               <div class="catagary_right">
-                  <div class="catagary_menu">
-                     <ul>
-                        <li><a href="#">Laptops</a></li>
-                        <li><a href="#">Monitor</a></li>
-                        <li><a href="#">Memories</a></li>
-                        <li><a href="#">Processors</a></li>
-                        <li><a href="#">Graphics cards</a></li>
-                        <li><a href="#">Mother boards</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="catagary_section_2">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="box_man">
-                     <h3 class="mobile_text">Acer</h3>
-                     <div class="comp_img "><img class="img_comp"  src="~/Pictures/acer.jpeg"></div>
-                     <div class="cart_main  d-flex flex-column">
-                    
-                        <h4 class="samsung_text">Acer</h4>
-                        <h6 class="rate_text"><a href="#">1399 AZN</a></h6>
-                        <h6 class="rate_text_1">1499 AZN</h6>
-                            <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box_man">
-                     <h3 class="mobile_text">Asus</h3>
-                     <div class="comp_img"><img  class="img_comp" src="~/Pictures/asus.jpeg"></div>
-                     <div class="cart_main d-flex flex-column">
-                      
-                        <h4 class="samsung_text">Asus</h4>
-                        <h6 class="rate_text"><a href="#">1579 AZN</a></h6>
-                        <h6 class="rate_text_1">1479 AZN</h6>
-                          <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box_man">
-                     <h3 class="mobile_text">Lenovo</h3>
-                     <div class="comp_img"><img  class="img_comp" src="~/Pictures/lenovo.jpeg"></div>
-                     <div class="cart_main d-flex flex-column">
-                    
-                        <h4 class="samsung_text">Lenovo</h4>
-                        <h6 class="rate_text"><a href="#">2399 AZN</a></h6>
-                        <h6 class="rate_text_1">2599 AZN</h6>
-                            <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- catagary section end -->
-
-
-      <!-- computers section start -->
-      <div class="computers_section layout_padding">
-         <div class="container">
-            <h1 class="computers_taital">Computers & Laptop</h1>
-         </div>
-      </div>
-      <div class="computers_section_2">
-         <div class="container-fluid">
-            <div class="computer_main">
-               <div class="row">
-                @{
-                   foreach (var item in Model)
-                   {
-                     
-                  <div class="col-md-4">
-                      <br>
-                      <br>
-                     <div ><img  class="img_comp" src="@Url.Content(item.LaptopPicPath)" alt="Image" /></div>
-                     <h4 class="computer_text">@item.Laptop.Brand</h4>
-                    <div class="text-center">
-                       <p><b>Processor:</b> @item.Laptop.Cpu</p>
-                       <p><b>Graphic card:</b>@item.Laptop.Gpu</p>
-                       <p><b>Memory:</b>@item.Laptop.Ssd</p>
-                       <p><b>Memory:</b>@item.Laptop.Hdd</p>
-                       <p><b>Operating System:</b>@item.Laptop.OperatingSystem</p>
-                       <p><b>Price:</b>@item.Laptop.Price</p>
-                    </div>
-                    <form asp-controller="Cart" asp-action="AddToCart" method="post">
-                       <input type="hidden" name="ProductId" value="3">
-                       <input type="hidden" name="Quantity" value="1">
-                       <input type="hidden" name="ItemPicId" value="2">
-                       <button type="submit" class="btn btn-success">Success</button>
-                    </form>
-                    </div>     
-                 
-                   }
-                }
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- computers section end -->
-      <!-- computer parts section start -->
-      <div class="mans_section layout_padding">
-         <div class="container">
-            <h1 class="computers_taital">Computer parts</h1>
-         </div>
-      </div>
-      <div class="mans_section_2">
-         <div class="container-fluid">
-            <div class="mans_main">
+<!-- banner section start -->
+<div class="banner_section layout_padding">
+   <div id="my_slider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <div class="container">
                <div class="row ">
-                  <div class="col-md-6 d-flex align-items-center flex-column">
-                     <h1 class="offer_text text-center">Best  computer parts</h1>
-                     <p class="lorem_text">There are many variations of passages of Lorem Ipsum available,but the majority have</p>
-                     <div class="read_bt"><a href="#">Buy Now</a></div>
+                  <div class="col-md-4">
+                     <div class="image_1"><img src="~/Pictures/navSetup1.jpeg" style="width:100%"></div>
                   </div>
-                  <div  class="col-md-6   ">
-                     <div  class="image_3 d-flex align-items-center text-center "><img class="gpu " src="~/Pictures/gpu.jpeg"></div>
+                  <div class="col-md-4">
+                     <h1 class="banner_taital">Big Sale Offer</h1>
+                     <div class="buynow_bt active"><a href="#">Buy Now</a></div>
+                     <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
-      <!-- computer parts section end -->
-      <!-- Pc setup section start -->
-      <div class="computers_section layout_padding">
-         <div class="container">
-            <h1 class="womans_taital">Computer setup</h1>
-            <div class="womans_section_2">
+         <div class="carousel-item">
+            <div class="container">
+               <div class="row ">
+                  <div class="col-md-4">
+                     <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h1 class="banner_taital">Big Sale Offer</h1>
+                     <div class="buynow_bt active"><a href="#">Buy Now</a></div>
+                     <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="carousel-item">
+            <div class="container">
                <div class="row">
-                  <div class="col-md-6">
-                     <h1 class="Get_offer_text">Get <br>offer Every Iteams</h1>
-                     <div class="read_bt"><a href="#">Buy Now</a></div>
+                  <div class="col-md-4">
+                     <div class="image_1"><img src="~/images/img-1.png" style="width:100%"></div>
                   </div>
-                  <div class="col-md-6">
-                     <div class="image_4"><img class="gamer_setup" src="~/Pictures/setup.jpeg"></div>
+                  <div class="col-md-4">
+                     <h1 class="banner_taital">Big Sale Offer</h1>
+                     <div class="buynow_bt active"><a href="#">Buy Now</a></div>
+                     <div class="contact_bt"><a href="contact.html">Contact Us</a></div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="image_2"><img src="~/images/img-2.png" style="width:100%"></div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- Pc setup section end -->
- 
+      <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+         <i class="fa fa-angle-left"></i>
+      </a>
+      <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+         <i class="fa fa-angle-right"></i>
+      </a>
+   </div>
+</div>
+<!-- banner section end -->
+<!-- catagary section start -->
+<div class="catagary_section layout_padding">
+   <div class="container">
+      <div class="catagary_main">
+         <div class="catagary_left">
+            <h2 class="categary_text">Categary</h2>
+         </div>
+         <div class="catagary_right">
+            <div class="catagary_menu">
+               <ul>
+                  <li><a href="#">Laptops</a></li>
+                  <li><a href="#">Monitor</a></li>
+                  <li><a href="#">Memories</a></li>
+                  <li><a href="#">Processors</a></li>
+                  <li><a href="#">Graphics cards</a></li>
+                  <li><a href="#">Mother boards</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="catagary_section_2">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-4">
+            <div class="box_man">
+               <h3 class="mobile_text">Acer</h3>
+               <div class="comp_img "><img class="img_comp" src="~/Pictures/acer.jpeg"></div>
+               <div class="cart_main  d-flex flex-column">
+
+                  <h4 class="samsung_text">Acer</h4>
+                  <h6 class="rate_text"><a href="#">1399 AZN</a></h6>
+                  <h6 class="rate_text_1">1499 AZN</h6>
+                  <form asp-controller="Product" asp-action="GetProduct" method="post">
+                     <input type="hidden" name="Brand" value="Acer">
+                     <button type="submit" class="btn btn-success">Acer models</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="box_man">
+               <h3 class="mobile_text">Asus</h3>
+               <div class="comp_img"><img class="img_comp" src="~/Pictures/asus.jpeg"></div>
+               <div class="cart_main d-flex flex-column">
+
+                  <h4 class="samsung_text">Asus</h4>
+                  <h6 class="rate_text"><a href="#">1579 AZN</a></h6>
+                  <h6 class="rate_text_1">1479 AZN</h6>
+                   <form asp-controller="Product" asp-action="GetProduct" method="post">
+                     <input type="hidden" name="Brand" value="Asus">
+                     <button type="submit" class="btn btn-success">Asus models</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="box_man">
+               <h3 class="mobile_text">Lenovo</h3>
+               <div class="comp_img"><img class="img_comp" src="~/Pictures/lenovo.jpeg"></div>
+               <div class="cart_main d-flex flex-column">
+
+                  <h4 class="samsung_text">Lenovo</h4>
+                  <h6 class="rate_text"><a href="#">2399 AZN</a></h6>
+                  <h6 class="rate_text_1">2599 AZN</h6>
+                   <form asp-controller="Product" asp-action="GetProduct" method="post">
+                     <input type="hidden" name="Brand" value="Lenovo">
+                     <button type="submit" class="btn btn-success">Lenovo models</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- catagary section end -->
+
+
+<!-- computers section start -->
+<div class="computers_section layout_padding">
+   <div class="container">
+      <h1 class="computers_taital">Computers & Laptop</h1>
+   </div>
+</div>
+<div class="computers_section_2">
+   <div class="container-fluid">
+      <div class="computer_main">
+         <div class="row">
+            @{
+               foreach (var item in Model)
+               {
+
+                  <div class="col-md-4">
+                     <br>
+                     <br>
+                     <div><img class="img_comp" src="@Url.Content(item.LaptopPicPath)" alt="Image" /></div>
+                     <h4 class="computer_text">@item.Laptop.Brand</h4>
+                     <div class="text-center">
+                        <p><b>Processor:</b> @item.Laptop.Cpu</p>
+                        <p><b>Graphic card:</b>@item.Laptop.Gpu</p>
+                        <p><b>Memory:</b>@item.Laptop.Ssd</p>
+                        <p><b>Memory:</b>@item.Laptop.Hdd</p>
+                        <p><b>Operating System:</b>@item.Laptop.OperatingSystem</p>
+                        <p><b>Price:</b>@item.Laptop.Price</p>
+                     </div>
+                     @{
+                        if (User.Identity.IsAuthenticated)
+                        {
+                           <form asp-controller="Cart" asp-action="AddToCart" method="post">
+                              <input type="hidden" name="ProductId" value="@item.Laptop.Id">
+                              <input type="hidden" name="Quantity" value="1">
+                              <input type="hidden" name="ItemPicId" value="@item.Id">
+                              <button type="submit" class="btn btn-success">Add to cart</button>
+                           </form>
+                        }
+                        else
+                        {
+                           <button class="btn btn-success"><a href="/Account/Login">Add to cart</a></button>
+                        }
+                     }
+                  </div>
+
+               }
+            }
+         </div>
+      </div>
+   </div>
+</div>
+<!-- computers section end -->
+<!-- computer parts section start -->
+<div class="mans_section layout_padding">
+   <div class="container">
+      <h1 class="computers_taital">Computer parts</h1>
+   </div>
+</div>
+<div class="mans_section_2">
+   <div class="container-fluid">
+      <div class="mans_main">
+         <div class="row ">
+            <div class="col-md-6 d-flex align-items-center flex-column">
+               <h1 class="offer_text text-center">Best computer parts</h1>
+               <p class="lorem_text">There are many variations of passages of Lorem Ipsum available,but the majority
+                  have</p>
+               <div class="read_bt"><a href="#">Buy Now</a></div>
+            </div>
+            <div class="col-md-6   ">
+               <div class="image_3 d-flex align-items-center text-center "><img class="gpu " src="~/Pictures/gpu.jpeg">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- computer parts section end -->
+<!-- Pc setup section start -->
+<div class="computers_section layout_padding">
+   <div class="container">
+      <h1 class="womans_taital">Computer setup</h1>
+      <div class="womans_section_2">
+         <div class="row">
+            <div class="col-md-6">
+               <h1 class="Get_offer_text">Get <br>offer Every Iteams</h1>
+               <div class="read_bt"><a href="#">Buy Now</a></div>
+            </div>
+            <div class="col-md-6">
+               <div class="image_4"><img class="gamer_setup" src="~/Pictures/setup.jpeg"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Pc setup section end -->

@@ -20,7 +20,7 @@ namespace CoreUI.Repositories.CartRepository.Abstract
             _cartRepository.Create(new Cart() { UserId = userId });
         }
 
-        public void AddToCart(string userId, int productId, byte quantity)
+        public void AddToCart(string userId, int productId, byte quantity,int itemPicId)
         {
             var cart = GetCartByUserId(userId);
 
@@ -35,7 +35,8 @@ namespace CoreUI.Repositories.CartRepository.Abstract
                     {
                         ProductId = productId,
                         Quantity = quantity,
-                        CartId = cart.Id
+                        CartId = cart.Id,
+                        ItemPicId=itemPicId
                         
                     });
                 }
@@ -49,6 +50,13 @@ namespace CoreUI.Repositories.CartRepository.Abstract
             }
         }
 
-
+         public void DeleteFromCart(string userId, int productId)
+        {
+            var cart = GetCartByUserId(userId);
+            if(cart!=null)
+            {
+                _cartRepository.DeleteFromCart(cart.Id,productId);
+            }   
+        }
     }
 }

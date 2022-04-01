@@ -10,19 +10,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CoreUI.Controllers
 {
-   
-    public class CartController:Controller
+
+    public class CartController : Controller
     {
         private ICartService _cartService;
         private UserManager<User> _userManager;
-        public CartController(ICartService cartService,UserManager<User> userManager)
+        public CartController(ICartService cartService, UserManager<User> userManager)
         {
             _cartService = cartService;
             _userManager = userManager;
         }
-        public IActionResult Index()
+         public IActionResult Index()
         {
-            var cart = _cartService.GetCartByUserId("4c5d4e01-ea67-4c8e-9bc6-904acb57affd");
+            var cart = _cartService.GetCartByUserId(_userManager.GetUserId(User));
             return View(new CartModel(){
                 CartId = cart.Id,
                 CartItems = cart.CartItems.Select(i=>new CartItemModel()
@@ -39,11 +39,19 @@ namespace CoreUI.Controllers
         } 
 
         [HttpPost]
-        public IActionResult AddToCart(int productId,byte quantity)
+        public IActionResult AddToCart(int productId,byte quantity,int itemPicId)
         {
             var userId = _userManager.GetUserId(User);
-            _cartService.AddToCart(userId,productId,quantity);
+            _cartService.AddToCart(userId,productId,quantity,itemPicId);
             return RedirectToAction("Index");
         } 
+
+        [HttpPost]
+        public IActionResult DeleteFromCart(int productId)
+        {
+            var userId = _userManager.GetUserId(User);
+            _cartService.DeleteFromCart(userId, productId);
+            return RedirectToAction("Index");
+        }
     }
 }

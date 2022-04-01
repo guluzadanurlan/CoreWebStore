@@ -15629,6 +15629,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\Product\\SearchProduct.cshtml",
+      "TargetPath": "Views\\Product\\SearchProduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15649,6 +15654,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\Product\\GetProduct.cshtml",
+      "TargetPath": "Views\\Product\\GetProduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -15661,6 +15671,11 @@
     {
       "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\Account\\UserPage.cshtml",
+      "TargetPath": "Views\\Account\\UserPage.cshtml",
       "FileKind": "mvc"
     },
     {
