@@ -84,3 +84,4 @@ C:\Users\Computer clinic\Desktop\CoreComputers\CoreUI\obj\Debug\net5.0\Razor\Vie
 C:\Users\Computer clinic\Desktop\CoreComputers\CoreUI\obj\Debug\net5.0\Razor\Views\Product\GetProduct.cshtml.g.cs
 C:\Users\Computer clinic\Desktop\CoreComputers\CoreUI\obj\Debug\net5.0\Razor\Views\Product\SearchProduct.cshtml.g.cs
 C:\Users\Computer clinic\Desktop\CoreComputers\CoreUI\obj\Debug\net5.0\Razor\Views\Account\UserPage.cshtml.g.cs
+C:\Users\Computer clinic\Desktop\CoreComputers\CoreUI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs

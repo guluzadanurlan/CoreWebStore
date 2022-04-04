@@ -24,6 +24,7 @@ namespace CoreUI.Controllers
         }
          public IActionResult SearchProduct(string par)
         {
+            
             CoreDbContext db = new CoreDbContext();
             
             var data=db.LaptopPictures.Include("Laptop").Where(
@@ -31,5 +32,11 @@ namespace CoreUI.Controllers
                 ).ToList();
             return View(data);
         }
+
+        public int RetInt(int a){
+            a=100;
+            return a;
+        }
+
     }
 }

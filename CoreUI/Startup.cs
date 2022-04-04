@@ -117,6 +117,11 @@ namespace CoreUI
                 pattern: "ana-sehife",
                 defaults: new { controller = "Product", action = "SearchProduct" });
 
+                  endpoints.MapControllerRoute(
+                name: "areas",
+                pattern: "{area}/{controller=Home}/{action=Index}/{Id?}");
+
+
             });
         }
     }
