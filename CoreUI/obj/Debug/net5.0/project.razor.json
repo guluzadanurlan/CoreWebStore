@@ -15619,6 +15619,11 @@
   "RootNamespace": "CoreUI",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Areas\\Admin\\Views\\Shared\\_adminLayout.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_adminLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\Home\\Contact.cshtml",
       "TargetPath": "Views\\Home\\Contact.cshtml",
       "FileKind": "mvc"
@@ -15636,6 +15641,16 @@
     {
       "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Areas\\Admin\\Views\\Home\\TableEdit.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Home\\TableEdit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Computer clinic\\Desktop\\CoreComputers\\CoreUI\\Views\\AddToCartWithCookie\\TestView.cshtml",
+      "TargetPath": "Views\\AddToCartWithCookie\\TestView.cshtml",
       "FileKind": "mvc"
     },
     {

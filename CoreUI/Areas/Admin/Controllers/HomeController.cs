@@ -18,8 +18,15 @@ namespace CoreUI.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-         
+
             return View();
+        }
+
+        public IActionResult TableEdit()
+        {
+            CoreDbContext obj = new CoreDbContext();
+           
+            return View( obj.UserPhotos.Include("User").ToList());
         }
     }
 }

@@ -175,21 +175,21 @@
                         <p><b>Operating System:</b>@item.Laptop.OperatingSystem</p>
                         <p><b>Price:</b>@item.Laptop.Price</p>
                      </div>
-                     @{
+                     @* @{
                         if (User.Identity.IsAuthenticated)
-                        {
+                        { *@
                            <form asp-controller="Cart" asp-action="AddToCart" method="post">
                               <input type="hidden" name="ProductId" value="@item.Laptop.Id">
                               <input type="hidden" name="Quantity" value="1">
                               <input type="hidden" name="ItemPicId" value="@item.Id">
                               <button type="submit" class="btn btn-success">Add to cart</button>
                            </form>
-                        }
+                        @* }
                         else
                         {
                            <button class="btn btn-success"><a href="/Account/Login">Add to cart</a></button>
                         }
-                     }
+                     } *@
                   </div>
 
                }
